@@ -3,7 +3,7 @@ import express from "express";
 import mongoose from "mongoose";
 import accountRouter from "./api/routes/accounts-router.js";
 import router from "./api/routes/flight-list-router.js";
-import authRouter from './api/routes/auth-router.js';
+import authRouter from "./api/routes/auth-router.js";
 
 dotenv.config();
 
@@ -39,3 +39,5 @@ app.get("/", async (req, res) => {
   res.send("Hello world");
 });
 app.listen(process.env.PORT | 8000);
+
+export default app;
